@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-black-75);
+}
+
+.menu {
+  position: relative;
+  background-color: var(--color-white);
+  height: 100vh;
+  width: 15.625rem;
+  padding: 1.5rem;
+  z-index: 2001;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-bottom: 3.375rem;
+}
+
+.closeButton img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigationList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigationList li {
+  margin-bottom: 1.25rem;
+}
+
+.navigationLink {
+  color: var(--color-very-dark-blue);
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  transition: color 0.2s ease;
+}
+
+.navigationLink:hover {
+  color: var(--color-orange);
+}
+
+/* Hide on desktop */
+@media (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+}

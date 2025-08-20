@@ -1,0 +1,40 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 5.625rem 0;
+  }
+  
+  .container {
+    padding: 0 2rem;
+  }
+  
+  .productContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 7.8125rem;
+    padding: 0;
+    align-items: center;
+  }
+}

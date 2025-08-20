@@ -1,0 +1,140 @@
+.productInfo {
+  padding: 1.5rem;
+}
+
+.company {
+  color: var(--color-orange);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--color-very-dark-blue);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--color-dark-grayish-blue);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.priceContainer {
+  margin-bottom: 2rem;
+}
+
+.currentPriceRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.currentPrice {
+  color: var(--color-very-dark-blue);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.discount {
+  background-color: var(--color-pale-orange);
+  color: var(--color-orange);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.originalPrice {
+  color: var(--color-grayish-blue);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  text-decoration: line-through;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.addToCartButton {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  padding: 1.125rem 1.5rem;
+  border: none;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1.25rem 3.125rem -0.625rem var(--color-orange);
+}
+
+.addToCartButton:hover:not(:disabled) {
+  background-color: hsl(26, 100%, 47%);
+  transform: translateY(-1px);
+}
+
+.addToCartButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.addToCartButton img {
+  width: 1.125rem;
+  height: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .productInfo {
+    padding: 3.875rem 0 0 0;
+  }
+  
+  .company {
+    font-size: 0.8125rem;
+    margin-bottom: 1.6875rem;
+  }
+  
+  .title {
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .priceContainer {
+    margin-bottom: 2rem;
+  }
+  
+  .currentPriceRow {
+    margin-bottom: 0.625rem;
+  }
+  
+  .actionsContainer {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .addToCartButton {
+    flex: 1;
+    padding: 1.125rem 2rem;
+  }
+}

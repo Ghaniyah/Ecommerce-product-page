@@ -1,0 +1,126 @@
+.gallery {
+  width: 100%;
+}
+
+.mainImageContainer {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.mainImageButton {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  display: block;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.navButton:hover {
+  opacity: 0.8;
+}
+
+.prevButton {
+  left: 1rem;
+}
+
+.nextButton {
+  right: 1rem;
+}
+
+.navButton img {
+  width: 0.75rem;
+  height: auto;
+}
+
+.thumbnailContainer {
+  display: none;
+  gap: 1.9375rem;
+  justify-content: space-between;
+}
+
+.thumbnailButton {
+  flex: 1;
+  max-width: 5.5rem;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.thumbnailButton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.thumbnailButton:hover::after {
+  opacity: 0.5;
+}
+
+.thumbnailButton.active {
+  outline: 2px solid var(--color-orange);
+}
+
+.thumbnailButton.active::after {
+  opacity: 0.75;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.625rem;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .mainImageContainer {
+    margin-bottom: 2rem;
+  }
+  
+  .mainImage {
+    border-radius: 0.9375rem;
+  }
+  
+  .navButton {
+    display: none;
+  }
+  
+  .thumbnailContainer {
+    display: flex;
+  }
+}
