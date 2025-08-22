@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import { Product } from '../../types';
 import QuantitySelector from '../QuantitySelector/QuantitySelector';
 import styles from './ProductInfo.module.css';
@@ -8,7 +8,7 @@ interface ProductInfoProps {
   onAddToCart: (product: Product, quantity: number) => void;
 }
 
-const ProductInfo: React.FC<ProductInfoProps> = ({ product, onAddToCart }) => {
+const ProductInfo: FC<ProductInfoProps> = ({ product, onAddToCart }) => {
   const [quantity, setQuantity] = useState(1);
 
   const handleAddToCart = () => {

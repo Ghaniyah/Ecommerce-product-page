@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header/Header';
 import ProductGallery from './components/ProductGallery/ProductGallery';
 import ProductInfo from './components/ProductInfo/ProductInfo';

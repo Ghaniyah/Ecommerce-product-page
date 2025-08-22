@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { FC, useEffect, MouseEvent } from 'react';
 import { ProductImage } from '../../types';
 import styles from './Lightbox.module.css';
 
@@ -11,7 +11,7 @@ interface LightboxProps {
   onThumbnailClick: (index: number) => void;
 }
 
-const Lightbox: React.FC<LightboxProps> = ({
+const Lightbox: FC<LightboxProps> = ({
   images,
   currentIndex,
   onClose,
@@ -38,7 +38,7 @@ const Lightbox: React.FC<LightboxProps> = ({
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [onClose, onNext, onPrevious, images.length]);
 
-  const handleBackdropClick = (event: React.MouseEvent) => {
+  const handleBackdropClick = (event: MouseEvent) => {
     if (event.target === event.currentTarget) {
       onClose();
     }

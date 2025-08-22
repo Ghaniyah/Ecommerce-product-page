@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC, ChangeEvent } from 'react';
 import styles from './QuantitySelector.module.css';
 
 interface QuantitySelectorProps {
@@ -8,7 +8,7 @@ interface QuantitySelectorProps {
   max?: number;
 }
 
-const QuantitySelector: React.FC<QuantitySelectorProps> = ({ 
+const QuantitySelector: FC<QuantitySelectorProps> = ({ 
   value, 
   onChange, 
   min = 0, 
@@ -26,7 +26,7 @@ const QuantitySelector: React.FC<QuantitySelectorProps> = ({
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newValue = parseInt(e.target.value, 10);
     if (!isNaN(newValue) && newValue >= min && newValue <= max) {
       onChange(newValue);

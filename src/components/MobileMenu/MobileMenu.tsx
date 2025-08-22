@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import styles from './MobileMenu.module.css';
 
 interface NavigationItem {
@@ -11,7 +11,7 @@ interface MobileMenuProps {
   onClose: () => void;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ navigationItems, onClose }) => {
+const MobileMenu: FC<MobileMenuProps> = ({ navigationItems, onClose }) => {
   useEffect(() => {
     // Prevent body scroll when menu is open
     document.body.style.overflow = 'hidden';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import Cart from '../Cart/Cart';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import styles from './Header.module.css';
@@ -14,7 +14,7 @@ interface HeaderProps {
   };
 }
 
-const Header: React.FC<HeaderProps> = ({ cart }) => {
+const Header: FC<HeaderProps> = ({ cart }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {

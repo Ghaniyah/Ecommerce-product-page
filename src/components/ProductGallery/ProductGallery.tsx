@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import { Product } from '../../types';
 import styles from './ProductGallery.module.css';
 
@@ -7,7 +7,7 @@ interface ProductGalleryProps {
   onImageClick: (index: number) => void;
 }
 
-const ProductGallery: React.FC<ProductGalleryProps> = ({ product, onImageClick }) => {
+const ProductGallery: FC<ProductGalleryProps> = ({ product, onImageClick }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleThumbnailClick = (index: number) => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import { CartItem } from '../../types';
 import styles from './Cart.module.css';
 
@@ -8,7 +8,7 @@ interface CartProps {
   onClose: () => void;
 }
 
-const Cart: React.FC<CartProps> = ({ items, onRemoveItem, onClose }) => {
+const Cart: FC<CartProps> = ({ items, onRemoveItem, onClose }) => {
   const cartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

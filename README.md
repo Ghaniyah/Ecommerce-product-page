@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/yourusername/ecommerce-product-page)
+- Solution URL: [GitHub Repository](https://github.com/Ghaniyah/Ecommerce-product-page.git)
 - Live Site URL: [Live Demo](https://your-live-site-url.com)
 
 ## My process
@@ -95,10 +95,9 @@ Areas I want to continue focusing on:
 
 ## Author
 
-- Website - [Your Name](https://www.your-site.com)
+- Website - [Ghaniyah Abdulazeez](https://github.com/Ghaniyah/Ecommerce-product-page)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Twitter - [@AyokeCoder](hhttps://x.com/home)
 ## Getting Started
 
 ### Prerequisites
