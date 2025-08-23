@@ -31,13 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Design](./design/desktop-design.jpg)
+![Desktop Design](/design/desktop-design.jpg)
 
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/Ghaniyah/Ecommerce-product-page.git)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
-
+- Live Site URL: [Live Demo](https://e-commerce-productpage-2025.netlify.app/)
 ## My process
 
 ### Built with
@@ -96,7 +95,7 @@ Areas I want to continue focusing on:
 ## Author
 
 - Website - [Ghaniyah Abdulazeez](https://github.com/Ghaniyah/Ecommerce-product-page)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Ghaniyah](https://www.frontendmentor.io/profile/Ghaniyah)
 - Twitter - [@AyokeCoder](hhttps://x.com/home)
 ## Getting Started
 

@@ -42,11 +42,11 @@ const Header: FC<HeaderProps> = ({ cart }) => {
             onClick={toggleMobileMenu}
             aria-label="Open menu"
           >
-            <img src="./images/icon-menu.svg" alt="" />
+            <img src="/images/icon-menu.svg" alt="" />
           </button>
           
           <div className={styles.logo}>
-            <img src="./images/logo.svg" alt="Sneakers" />
+            <img src="/images/logo.svg" alt="Sneakers" />
           </div>
           
           <nav className={styles.navigation}>
@@ -69,7 +69,7 @@ const Header: FC<HeaderProps> = ({ cart }) => {
               onClick={cart.toggleCart}
               aria-label={`Cart with ${cart.getTotalItems()} items`}
             >
-              <img src="./images/icon-cart.svg" alt="" />
+              <img src="/images/icon-cart.svg" alt="" />
               {cart.getTotalItems() > 0 && (
                 <span className={styles.cartBadge}>
                   {cart.getTotalItems()}
@@ -88,7 +88,7 @@ const Header: FC<HeaderProps> = ({ cart }) => {
           
           <button className={styles.avatarButton}>
             <img 
-              src="./images/image-avatar.png" 
+              src="/images/image-avatar.png" 
               alt="User avatar" 
               className={styles.avatar}
             />

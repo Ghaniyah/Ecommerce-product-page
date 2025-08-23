@@ -70,7 +70,7 @@ const Cart: FC<CartProps> = ({ items, onRemoveItem, onClose }) => {
                       onClick={() => onRemoveItem(item.id)}
                       aria-label={`Remove ${item.product.name} from cart`}
                     >
-                      <img src="./images/icon-delete.svg" alt="" />
+                      <img src="/images/icon-delete.svg" alt="" />
                     </button>
                   </div>
                 ))}

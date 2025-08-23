@@ -42,7 +42,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ navigationItems, onClose }) => {
           onClick={onClose}
           aria-label="Close menu"
         >
-          <img src="./images/icon-close.svg" alt="" />
+          <img src="/images/icon-close.svg" alt="" />
         </button>
         
         <nav className={styles.navigation}>

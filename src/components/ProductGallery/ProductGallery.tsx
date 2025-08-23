@@ -49,7 +49,7 @@ const ProductGallery: FC<ProductGalleryProps> = ({ product, onImageClick }) => {
           onClick={previousImage}
           aria-label="Previous image"
         >
-          <img src="./images/icon-previous.svg" alt="" />
+          <img src="/images/icon-previous.svg" alt="" />
         </button>
         
         <button 
@@ -57,7 +57,7 @@ const ProductGallery: FC<ProductGalleryProps> = ({ product, onImageClick }) => {
           onClick={nextImage}
           aria-label="Next image"
         >
-          <img src="./images/icon-next.svg" alt="" />
+          <img src="/images/icon-next.svg" alt="" />
         </button>
       </div>
 

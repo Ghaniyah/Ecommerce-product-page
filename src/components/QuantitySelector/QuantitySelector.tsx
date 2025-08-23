@@ -41,7 +41,7 @@ const QuantitySelector: FC<QuantitySelectorProps> = ({
         disabled={value <= min}
         aria-label="Decrease quantity"
       >
-        <img src="./images/icon-minus.svg" alt="" />
+        <img src="/images/icon-minus.svg" alt="" />
       </button>
       
       <input 
@@ -60,7 +60,7 @@ const QuantitySelector: FC<QuantitySelectorProps> = ({
         disabled={value >= max}
         aria-label="Increase quantity"
       >
-        <img src="./images/icon-plus.svg" alt="" />
+        <img src="/images/icon-plus.svg" alt="" />
       </button>
     </div>
   );

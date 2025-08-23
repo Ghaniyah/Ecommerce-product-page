@@ -52,7 +52,7 @@ const Lightbox: FC<LightboxProps> = ({
           onClick={onClose}
           aria-label="Close lightbox"
         >
-          <img src="./images/icon-close.svg" alt="" />
+          <img src="/images/icon-close.svg" alt="" />
         </button>
         
         <div className={styles.mainImageContainer}>
@@ -61,7 +61,7 @@ const Lightbox: FC<LightboxProps> = ({
             onClick={() => onPrevious(images.length)}
             aria-label="Previous image"
           >
-            <img src="./images/icon-previous.svg" alt="" />
+            <img src="/images/icon-previous.svg" alt="" />
           </button>
           
           <img 
@@ -75,7 +75,7 @@ const Lightbox: FC<LightboxProps> = ({
             onClick={() => onNext(images.length)}
             aria-label="Next image"
           >
-            <img src="./images/icon-next.svg" alt="" />
+            <img src="/images/icon-next.svg" alt="" />
           </button>
         </div>
 

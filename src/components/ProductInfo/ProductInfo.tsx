@@ -56,7 +56,7 @@ const ProductInfo: FC<ProductInfoProps> = ({ product, onAddToCart }) => {
           onClick={handleAddToCart}
           disabled={quantity === 0}
         >
-          <img src="./images/icon-cart.svg" alt="" />
+          <img src="/images/icon-cart.svg" alt="" />
           Add to cart
         </button>
       </div>
